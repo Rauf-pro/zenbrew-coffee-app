@@ -23,19 +23,20 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#100e0e',
+          DEFAULT: "#100e0e",
         },
         secondary: {
-          DEFAULT: '#787f8a',
+          DEFAULT: "#787f8a",
         },
         accent: {
-          DEFAULT: '#c7a17a',
-          hover:'#a08161',
+          DEFAULT: "#c7a17a",
+          hover: "#a08161",
         },
-
       },
       backgroundImage: {
-        hero_overlay:
+        hero_overlay: "url('/assets/hero/hero-overlay.png')",
+        opening_hours: "url('/assets/opening-hours/bg.png')",
+        footer: "url('/assets/footer/bg.png')",
       },
     },
   },

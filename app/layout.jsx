@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${cormorant_upright} ${open_sans}`}>{children}</body>
+      <body className={`${cormorant_upright.variable} ${open_sans.variable}`}>{children}</body>
     </html>
   );
 }
