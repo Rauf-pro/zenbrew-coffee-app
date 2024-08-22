@@ -31,10 +31,34 @@ const data = [
 const About = () => {
   const scrollableSectionRef = useRef(null);
   const scrollableTriggerRef = useRef(null);
+
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const animation = gsap.fromTo(
+      scrollableSectionRef.current,
+      { translateX: 0 },
+      {
+        translateX: "-200vw",
+        ease: "none",
+        duration: 1,
+        scrollTrigger: {
+          trigger: scrollableTriggerRef.current,
+          start: "top top",
+          end: "1800vw top",
+          scrub: 0.6,
+          pin: true,
+        },
+      }
+    );
+    return () => {
+        animation.kill();
+    }
+  }, []);
+
   return (
     <section className="overflow-hidden bg-primary">
       <div ref={scrollableTriggerRef}>
-        <div ref={scrollableSectionRef}>
+        <div ref={scrollableSectionRef} className="h-screen w-[300vw] relative">
           {data.map((item, index) => {
             return (
               <div
@@ -71,7 +95,14 @@ const About = () => {
                     </div>
                     {/* image */}
                     <div className="hidden xl:flex flex-1 w-full h-[70vh] relative">
-                      <Image src={item.imgSrc} fill alt="" className="object-cover" quality={100} priority/>
+                      <Image
+                        src={item.imgSrc}
+                        fill
+                        alt=""
+                        className="object-cover"
+                        quality={100}
+                        priority
+                      />
                     </div>
                   </div>
                 </div>
