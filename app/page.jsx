@@ -7,6 +7,7 @@ import Explore from "@/components/Explore";
 import Hero from "@/components/Hero";
 import Menu from "@/components/Menu";
 import Testimonials from "@/components/Testimonials";
+import OpeningHours from "@/components/OpeningHours";
 
 
 
@@ -25,6 +26,7 @@ const Home = () => {
       <Explore/>
       <About/>
       <Menu/>
+      <OpeningHours/>
       <Testimonials/>
       {/* temporary div */}
       <div className="h-[4000px]"></div>

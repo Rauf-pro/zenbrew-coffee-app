@@ -14,7 +14,7 @@ module.exports = {
       sm: "640px",
       md: "768px",
       lg: "960px",
-      xl: "1430px",
+      xl: "1280px",
     },
     fontFamily: {
       primary: "var(--font-cormorant_upright)",
