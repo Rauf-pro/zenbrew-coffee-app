@@ -35,11 +35,11 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-
 ## Using libraries and tools
-
+```
 1. framer-motion - That makes it easy to create smooth and complex animations.
 2. gsap - powerful JavaScript library for creating high-performance animations.
 3. locomotive-scroll - Smooth scrolling library that enhances the user experience by providing smooth, inertia-based scrolling for web pages.
 4. react-icons - Using any icons for website.
 5. swiper - For using slider actions.
+```
