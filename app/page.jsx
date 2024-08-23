@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import About from "@/components/About";
 import Explore from "@/components/Explore";
 import Hero from "@/components/Hero";
+import Menu from "@/components/Menu";
 
 
 
@@ -22,6 +23,7 @@ const Home = () => {
       <Hero />
       <Explore/>
       <About/>
+      <Menu/>
       {/* temporary div */}
       <div className="h-[4000px]"></div>
     </div>
